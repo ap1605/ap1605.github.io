@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AP Resume Site</title>
+    <title>AP Site</title>
     <link rel="stylesheet" href="style.css"/> 
     <script type="text/javascript" src="web_functions.js"></script>
-  </head>
-  <body>
-    <div id="firstSideNav" class="sidenavbar">
-      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-      <a href="#"><i class="fa fa-fw fa-contact"></i> Contact</a>
-      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-    </div>
-    <div class="menu" onclick="openMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
+    <script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
 
     
-    <div class="container">
-      <div class="introduction">
-        <h1>Hi there, I'm Aaron Palmer!</h1>
-        <p>Who am I?</p>
-        <p>THIS IS WHERE WE PUT THE INTRO</p>
+    <div id="headImg" class="head-img">
+      <div id="sideNavBtn" class="sidenavbtn">
+        <span style="font-size:60;cursor:pointer"  
+            onclick="openNav(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div> 
+        </span>
       </div>
     </div>
-    <footer>
+
+  </head>
+  <body>
+
+
+ 
+    <div id="main">
+      
+      <div class="introduction">
+        <h1>Hello World</h1>
+        <p>THIS IS WHERE WE PUT THE INTRO</p>
+      </div>
       <ul>
         <li><a href="mailto:amp2001609@gmail.com">Email: amp2001609@gmail.com</a></li>
         <li>
@@ -34,6 +36,25 @@
         </li>
         <li><a href="https://www.linkedin.com/in/aaron-palmer-5960a6232/">My LinkedIn</a></li>
       </ul>
-    </footer>
+    </div>
+
+    <div id="mySideNav" class="sidenav">
+      <a href="#">Home</a>
+      <a href="#school">School</a>
+      <a href="#internship">Internship</a>
+      <a href="#job">Job</a>
+      <a href="#games">Games</a>
+    </div>
+    
+    <iframe src="2DGame_WebGL_dev/index.html" width="800" height="600"></iframe>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.loader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("gameCanvas", "/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.framework.js");
+    </script>
+    
+
+
   </body>
 </html>
