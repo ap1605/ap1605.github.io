@@ -16,7 +16,7 @@ head {
 }
 
 body{
-  background-image: url("/Images/IMG_9519.JPG");
+  background-image: url("./Images/IMG_9519.jpg");
   background-repeat: repeat-y;
   background-size: cover;
 
@@ -145,4 +145,9 @@ body{
   /* NEED: something similar to above but with scrolling and making
             sidebar sticky
   */
+
+
+  .firstgame {
+    transition: margin-left .5s;
+  }
   
