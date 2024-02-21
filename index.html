@@ -46,14 +46,20 @@
       <a href="#games">Games</a>
     </div>
     
-    <iframe src="2DGame_WebGL_dev/index.html" width="800" height="600"></iframe>
 
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <script src="/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.loader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("gameCanvas", "/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.framework.js");
-    </script>
+    <div id="2DGame" class="game" style="position:relative; top: 50px">
+
     
+      <iframe src="2DGame_WebGL_dev/index.html" width="1200" height="800">
+      
+      </iframe>
+
+      <canvas id="gameCanvas" width="1200" height="800"></canvas>
+      <script src="/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.loader.js"></script>
+      <script>
+        var unityInstance = UnityLoader.instantiate("gameCanvas", "/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.framework.js");
+      </script>
+    </div>
 
 
   </body>
