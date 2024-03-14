@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Games Page</title>
+        <link rel="stylesheet" href="style.css"/> 
+        <script type="text/javascript" src="web_functions.js"></script>
+        <script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>   
+        <div id="headImg" class="head-img">
+            <div id="sideNavBtn" class="sidenavbtn">
+              <span style="font-size:60;cursor:pointer"  
+                  onclick="openNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div> 
+              </span>
+            </div>
+          </div>
+    </head>
+    <body>
+        <div id="mySideNav" class="sidenav">
+            <a href="home.html">Home</a>
+            <a href="school.html" target="_top">School</a>
+            <a href="internships.html" target="_top"> Internship</a>
+            <a href="job.html" target="_top">Job</a>
+            <a href="games.html" target="_top">Games</a>
+          </div>
+
+
+        <div id="2DGame" class="firstgame" style="width: fit-content; height: fit-content;">    
+            <iframe src="2DGame_WebGL_dev/index.html" width="100%" height="100%"></iframe>
+            <canvas id="gameCanvas" width="100%" height="100%"></canvas>
+            <script src="/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.loader.js"></script>
+            <script>
+              var unityInstance = UnityLoader.instantiate("gameCanvas", "/Users/aaronp1605/dev_apps/Websites/ap1605.github.io/2DGame_WebGL_dev/Build/2DGame_WebGL_dev.framework.js");
+            </script>
+        </div>
+    </body>
+</html>

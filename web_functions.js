@@ -14,19 +14,35 @@ function openNav(x) {
   var backColor = document.body.style.backgroundColor;
   if(sNav.style.width > "0px"){
     sNav.style.width = "0px";
-    mPage.style.marginLeft = "0px";
-    head.style.marginLeft = "0px";
-    navBtn.style.marginLeft = "0px";
-    first_game.style.marginLeft = "0px";
+    if(mPage != null){
+      mPage.style.marginLeft = "0px";
+    }
+    if(head != null){
+      head.style.marginLeft = "0px";
+    }
+    if(navBtn != null){
+      navBtn.style.marginLeft = "0px";
+    }
+    if(first_game != null){
+      first_game.style.marginLeft = "0px";
+    }
     backColor = "white";
   }
   else{
     sNav.style.width = "250px";
-    mPage.style.marginLeft = "250px";
-    head.style.marginLeft = "250px";
-    navBtn.style.marginLeft = "-250px";
-    first_game.style.marginLeft = "250px";
+    if(mPage != null){
+      mPage.style.marginLeft = "250px";
+    }
+    if(head != null){
+      head.style.marginLeft = "250px";
+    }
+    if(first_game != null){
+      navBtn.style.marginLeft = "-250px";
+    }
+    if(first_game != null){
+      first_game.style.marginLeft = "250px";
+    }
     backColor = "rgba(0,0,0,0.4)";
   }
-  x.classList.toggle("change");
+  navBtn.classList.toggle("change");
 }
